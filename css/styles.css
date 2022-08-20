@@ -176,7 +176,15 @@ img {
 
 /*About us*/
 .about-us{
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+}
 
+@media (min-width: 768px) {
+    .about-us{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
 }
 
 .about-us__content{
@@ -184,6 +192,12 @@ img {
 }
 
 .about-us__image{
-
+    grid-row: 1/2;
+    width: 100%;
 }
 
+@media (min-width: 768px) {
+    .about-us__image{
+        grid-column: 2/3;
+    }
+}

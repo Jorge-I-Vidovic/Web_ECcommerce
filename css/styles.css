@@ -53,7 +53,7 @@ p {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .container {
@@ -187,10 +187,6 @@ img {
     }
 }
 
-.about-us__content{
-
-}
-
 .about-us__image{
     grid-row: 1/2;
     width: 100%;
@@ -206,10 +202,36 @@ img {
 .blocks{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.block{
+    text-align: center;
+}
+
+.block__title{
+    margin: 0;
 }
 
 @media (min-width: 768px) {
     .blocks{
         grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.block__image{
+    width: 100%;
+}
+
+/* Página del producto */
+.t-shirt{
+
+}
+
+@media (min-width: 768px) {
+    .t-shirt{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
     }
 }
